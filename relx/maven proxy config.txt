@@ -1,18 +1,16 @@
 <settings>
   <proxies>
     <proxy>
-      <id>corp-proxy</id>
+      <id>internal-proxy</id>
       <active>true</active>
-      <protocol>http</protocol> <!-- or https -->
-      <host>YOUR_PROXY_HOST</host>
-      <port>YOUR_PROXY_PORT</port>
+      <protocol>http</protocol>
+      <host>10.150.92.15</host>
+      <port>8080</port>
 
-      <!-- If authentication required -->
-      <username>YOUR_USERNAME</username>
-      <password>YOUR_PASSWORD</password>
-
-      <!-- Optional: skip proxy for internal domains -->
-      <nonProxyHosts>localhost|127.0.0.1|*.company.com</nonProxyHosts>
+      <!-- No authentication needed -->
+      
+      <!-- Optional but recommended -->
+      <nonProxyHosts>localhost|127.0.0.1</nonProxyHosts>
     </proxy>
   </proxies>
 </settings>
